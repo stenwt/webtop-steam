@@ -1,7 +1,7 @@
 FROM linuxserver/webtop:ubuntu-kde
 
 RUN \
- wget https://cdn.akamai.steamstatic.com/client/installer/steam.deb && \
+ curl -LO https://cdn.akamai.steamstatic.com/client/installer/steam.deb && \
  apt install -y ./steam.deb && \
  rm -f steam.deb 
 
