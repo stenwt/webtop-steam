@@ -1,4 +1,4 @@
-FROM lsiobase/webtop:ubuntu-kde
+FROM linuxserver/webtop:ubuntu-kde
 
 RUN \
  echo "**** install packages ****" && \
