@@ -1,4 +1,4 @@
-FROM lsiobase/rdesktop-web:ubuntu-kde
+FROM lsiobase/webtop:ubuntu-kde
 
 RUN \
  echo "**** install packages ****" && \
