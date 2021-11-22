@@ -1,13 +1,9 @@
 FROM linuxserver/webtop:ubuntu-kde
 
 RUN \
- echo "**** install packages ****" && \
- pushd /tmp && \
  wget https://cdn.akamai.steamstatic.com/client/installer/steam.deb && \
  apt install -y ./steam.deb && \
- echo "**** cleanup ****" && \
- rm -rf \
-    /tmp/*
+ rm -f steam.deb 
 
 # add local files
 COPY /root /
